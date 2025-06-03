@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>패션 블로그 쇼핑몰</title>
+    <style>
+        body {
+            background: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+        }
+        .buttons button {
+            margin-left: 10px;
+            background: black;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        header {
+            background: #fff;
+            padding: 16px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            border-bottom: 1px solid #e0e0e0;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 32px auto;
+            padding: 0 16px;
+        }
+        .post {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 32px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+        }
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #ddd;
+            margin-right: 12px;
+            object-fit: cover;
+        }
+        .username {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .post-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 0 0 10px 10px;
+        }
+        .post-content {
+            padding: 16px;
+            font-size: 1rem;
+        }
+        .tags {
+            color: #3897f0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">NAMTANG</div>
+        
+        <div class="search">
+            <input type="text" placeholder="검색어를 입력하세요">
+            <div class="search-icon">🔍</div>
+        </div>
+
+        <div class="buttons">
+            <button>마이페이지</button>
+            <button>로그인</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="post">
+            <div class="post-header">
+            <a href="profile_fashionista_01.html">
+                <img class="avatar" src="블1.jpg" alt="유저 프로필">
+            </a>
+            <span class="username">fashionista_01</span>
+            </div>
+            <img class="post-img" src="1위.jpg" alt="옷 사진">
+            <div class="post-content">
+            뭐시기뭐시기 <br>
+            어쩌구어쩌구 <br>
+            <span class="tags">#봄코디 #원피스 #데일리룩</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+            <a href="profile_style_guy.html">
+                <img class="avatar" src="블2.jpg" alt="유저 프로필">
+            </a>
+            <span class="username">style_guy</span>
+            </div>
+            <img class="post-img" src="2위.jpg" alt="옷 사진">
+            <div class="post-content">
+            이러쿵저러쿵 <br>
+            어쩔저쩔<br>
+            <span class="tags">#심플룩 #셔츠 #청바지</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
