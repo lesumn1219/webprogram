@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+     body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+        }
+        .buttons1 button {
+            margin-left: 10px;
+            background: black;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .product {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .image img {
+            width: 500px;
+        }
+        .info {
+            text-align: left;
+            max-width: 300px;
+        }
+        .category {
+            font-size: 14px;
+            color: gray;
+        }
+        .title {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+            <div class="logo">NAMTANG</div>
+            
+            <div class="search">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <div class="search-icon">🔍</div>
+            </div>
+
+            <div class="buttons1">
+                <button>마이페이지</button>
+                <button>로그인</button>
+            </div>
+        </div>
+
+    <div class="container">
+    <div class="product">
+      <div class="image">
+        <img src="4위.jpg">
+      </div>
+      <div class="info">
+        <p class="category">티셔츠</p>
+        <h2 class="title">브라운 카라 반팔</h2>
+        <p class="price">62,000원</p>
+
+        <label>색상 선택:</label>
+        <select>
+          <option>브라운</option>
+        </select>
+
+        <label>사이즈 선택:</label>
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+
+        <label>수량 선택:</label>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+
+        <div class="buttons">
+          <button>장바구니</button>
+          <button>구매하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
